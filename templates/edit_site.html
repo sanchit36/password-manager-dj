@@ -1,0 +1,22 @@
+{% extends 'account/base.html' %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-md-10 col-sm-12 mx-auto">
+        <h2 class="text-center">{{title|title}}</h2>
+        <form action="{% url 'edit_site' site.id %}" method="POST">
+            {% csrf_token %}
+            <input 
+                type="text" 
+                placeholder="Enter New Password" 
+                name="password"
+                class="form-control mb-3" 
+                autocomplete="off"
+            >
+            <button class="btn btn-dark" type="submit">Add Site</button>
+        </form>
+        </div>
+    </div>
+{% endblock content %}
+
+
