@@ -20,7 +20,7 @@ DEBUG = False
 ALLOWED_HOSTS = [
     'localhost',
     '127.0.0.1',
-    'password-manager-dj'
+    'https://password-manager-dj.herokuapp.com/'
 ]
 
 
